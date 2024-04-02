@@ -7,15 +7,16 @@ import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
 import TimeLineParent from "@/app/_components/TimeLineParent";
 
+
 const Page = () => {
   return (
     <div className="w-[100dvw] h-auto  min-h-[100dvh] flex-col overflow-y-auto">
-      <div className=" bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh] dark:bg-dark_bg banner-div-new">
-        <div className="flex flex-row items-start justify-center banner-title">
+      <div className="bg-[url('../public/banner/newhero.jpg')] bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh]">
+        {/* <div className="flex flex-row items-start justify-center ">
           <h1 className="md:text-6xl text-4xl text-center text-white font-bold">
             About Us
           </h1>
-        </div>
+        </div> */}
       </div>
       {/*  seperator*/}
       <div className="flex flex-col px-10 md:px-20 w-[100dvw] h-auto min-h-[100dvh] dark:bg-dark_bg dark:text-light_txt ">
@@ -71,7 +72,7 @@ const Page = () => {
             </h1>
           </div>
           {/* profile cards */}
-          <div className="md:grid  xl:grid-cols-3 md:grid-cols-2 gap-5 w-[100%] mt-4 gap-x-2 flex overflow-scroll md:overflow-hidden">
+          <div className="gap-5 w-[100%] mt-4 items-center  justify-center gap-x-2 flex overflow-scroll md:overflow-hidden">
             {Profiledata.map((item, index) => (
               <div
                 key={index}

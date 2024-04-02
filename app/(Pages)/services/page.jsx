@@ -12,6 +12,8 @@ import Button from "@mui/material/Button";
 import { FaqData, data } from "../../data.js";
 import { useContext } from "react";
 import { SelectedServiceContext } from "@/app/_provider/ServicesProvider.jsx";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Carosole from "@/app/_components/carosole";
 
 const Page = () => {
   const { selectedService, setSelectedService } = useContext(
@@ -28,7 +30,7 @@ const Page = () => {
   };
   return (
     <div className="w-[100dvw] h-auto min-h-[100dvh] flex-col  relative dark:bg-dark_bg overflow-y-auto">
-      <div className="bg-[url('../public/banner/newhero.jpg')] bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh] banner-div-new overflow-y-auto">
+      {/* <div className="bg-[url('../public/banner/newhero.jpg')] bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh] banner-div-new overflow-y-auto">
         <div className="banner-title">
           <h1 className="md:text-6xl text-4xl text-center text-white font-bold">
             {selectedService.name}
@@ -37,7 +39,9 @@ const Page = () => {
             Home {" >>  "}Services
           </div>
         </div>
-      </div>
+      </div> */}
+      <Carosole />
+
       {/*  seperator*/}
       <div className="flex flex-col px-10 md:px-20 w-[100dvw] h-auto overflow-y-auto">
         <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 items-start pt-[10dvh]">
@@ -45,7 +49,7 @@ const Page = () => {
             <img
               src={selectedService.img}
               alt="banner"
-              className="object-cover w-full h-[800px] border rounded-md"
+              className="object-cover w-full h-[600px] border rounded-md"
             />
           </div>
           <div className="bg-[#F4F4F4] w-full md:w-[40%] border rounded-lg flex flex-col h-fit min-h-full max-h-fit pb-2 dark:bg-black dark:text-white">
@@ -92,6 +96,7 @@ const Page = () => {
         </div>
 
         {/* faq section */}
+
         <div className="flex flex-col justify-start w-full md:max-w-[60%] py-10 dark:text-white">
           <h1 className="md:text-6xl text-4xl  font-bold">FAQ</h1>
           <p className="w-full md:max-w-[90%] py-7">

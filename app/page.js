@@ -64,7 +64,7 @@ export default function Home() {
 
     // -------------------------------------------
     return (
-        <div className={"bg-white dark:bg-dark_bg overflow-y-auto"}>
+        <div className={"bg-white dark:bg-dark_bg overflow-y-auto overflow-x-hidden"}>
             <div
                 className={"w-[100dvw] h-[100dvh] bg-[url('../public/banner/hero-banner.jpg')] bg-cover flex justify-center pt-[30dvh] banner-div"}>
 
@@ -147,7 +147,7 @@ export default function Home() {
             </div>
             {/*    ---------------------------Contact Form----------*/}
 
-            <div id={"Contact"} className={"md:flex w-[100%] h-[70vh]] pt-20  dark:text-light_txt "}>
+            <div id={"Contact"} className={"md:flex w-[100%] pt-24 dark:text-light_txt"}>
                 <div
                     className={" hidden md:block w-[30vw] h-auto xl:h-auto  bg-[url('../public/contactbg.png')] bg-cover text-white "}>
                     <div className={"ml-8 mt-10"}><p>Get in Touch</p>

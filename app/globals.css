@@ -15,8 +15,8 @@
   --footer-text: #838383;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none;
+  /* -ms-overflow-style: none; /* IE and Edge */
+  /* scrollbar-width: none; */ 
 }
 
 /* Dark mode */
@@ -35,16 +35,16 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-*/ .banner-div {
+ .banner-div {
   position: relative; /* Required for z-index to work */
   z-index: 1;
-  background: linear-gradient(
+  /* background: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.8) 0,
       rgba(0, 0, 0, 0) 60%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url("../public/banner/hero-banner.jpg");
+    url("../public/banner/hero-banner.jpg"); */
   background-size: cover;
   background-position: center;
 }

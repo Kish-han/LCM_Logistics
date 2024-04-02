@@ -106,8 +106,13 @@ export default function Footer() {
                 </div>
 
             </div>
-            <div className={"flex w-[100%] py-4 text-white justify-center py-8s bg-stone-950 text-sm"}>
-                Copyright@LCM LOGISTICS PVT LTD.All right reserved
+            <div className={"flex w-[100%] py-4 text-white justify-around py-8s bg-stone-950 text-sm"}>
+                <p>
+                    Copyright@LCM LOGISTICS PVT LTD.All right reserved
+                </p>
+                <p>
+                    Website Designed by <a href={"https://simplifyr.in/"}>Simplifyr</a>
+                </p>
             </div>
         </div>
     )

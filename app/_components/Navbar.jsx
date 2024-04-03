@@ -63,26 +63,26 @@ const Navbar = () => {
   }, []);
   return (
     <main
-      className={`z-[9999] min-h-26 max-h-18 min-w-[100vw] fixed lg:w-[100vw] text-white ${
-        color ? "bg-black bg-opacity-50" : ""
-      } backdrop-blur-[5px]  border-0 border-solid border-[rgba(255,255,255,0.75)]`}
+      className={`z-[9999] min-h-26 max-h-18 min-w-[100vw] fixed lg:w-[100vw] text-white ${color ? "bg-black bg-opacity-50" : ""
+        } backdrop-blur-[5px]  border-0 border-solid border-[rgba(255,255,255,0.75)]`}
     >
       <div className="flex flex-row  items-center  justify-between py-3 px-4  lg:px-20">
-        <div className="font-bold text-[18px] flex items-center justify-between">
-          <img
-            src={"./logo-1.png"}
+        <div className="font-bold text-[18px] flex flex-col items-center justify-between">
+          <Image
+            width={128}
+            height={48}
+            src={"/logo-1.png"}
             alt={"logo"}
             className={"h-14 w-32 pr-2 cursor-pointer"}
             onClick={() => router.push("/")}
-          ></img>
-          {/* <div
-            className={`text-2xl text-black ${
-              color ? "text-white" : ""
-            } pl-2 cursor-pointer`}
+          />
+          <div
+            className={`text-[14px] text-white ${color ? "text-white" : ""
+              } pl-2 cursor-pointer`}
             onClick={() => router.push("/")}
           >
-            LCM.PVT.LTD
-          </div> */}
+            Supply chain solutions
+          </div>
         </div>
         <div className="block md:hidden pl-4 ml-auto">
           <label className="flex  items-center cursor-pointer">
@@ -102,11 +102,10 @@ const Navbar = () => {
                 <div className="relative">
                   <div className="block border-[1px] border-white border-white-900 w-14 h-7 rounded-full"></div>
                   <div
-                    className={`dot absolute top-[2.7px]   bg-white w-[23px] h-[23px] rounded-full transition ${
-                      isChecked
-                        ? 'before:content-["🌛"]'
-                        : 'before:content-["☀️"]'
-                    } `}
+                    className={`dot absolute top-[2.7px]   bg-white w-[23px] h-[23px] rounded-full transition ${isChecked
+                      ? 'before:content-["🌛"]'
+                      : 'before:content-["☀️"]'
+                      } `}
                     style={{
                       transform: isChecked
                         ? "translateX(136%) "
@@ -135,9 +134,8 @@ const Navbar = () => {
           )}
         </div>
         <ul
-          className={`ml-auto text-center font-bold  md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 transition-all shadow-xl duration-500 smooth md:hidden ${
-            open ? "top-20 " : "top-[-490px] ml-0 pl-0"
-          }`}
+          className={`ml-auto text-center font-bold  md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 transition-all shadow-xl duration-500 smooth md:hidden ${open ? "top-20 " : "top-[-490px] ml-0 pl-0"
+            }`}
         >
           <div className="flex flex-col items-center justify-center">
             {data.map((link, index) => (
@@ -180,11 +178,10 @@ const Navbar = () => {
                 <div className="relative">
                   <div className="block border-[1px] border-white border-white-900 w-16 h-7 rounded-full"></div>
                   <div
-                    className={`dot absolute top-[3px]  bg-white w-6 h-6 rounded-full transition ${
-                      isChecked
-                        ? 'before:content-["🌛"]'
-                        : 'before:content-["☀️"]'
-                    } `}
+                    className={`dot absolute top-[3px]  bg-white w-6 h-6 rounded-full transition ${isChecked
+                      ? 'before:content-["🌛"]'
+                      : 'before:content-["☀️"]'
+                      } `}
                     style={{
                       transform: isChecked
                         ? "translateX(158%) "

@@ -79,7 +79,7 @@ export const Profiledata = [
     {
         name: "SUBRAMANYA BT",
         role: "DIRECTOR",
-        desc: `A Supply Chain Professional with over 15 years of entrepreneurial stint, as having found LCM Logistics Private Limited.
+        desc: `Subramanya BT is a seasoned supply chain professional with over 15 years of entrepreneurial experience. He founded LCM Logistics Private Limited, a leading provider of tailored supply chain solutions. Under his leadership, LCM Logistics excels in delivering efficiency, reliability, and innovation, leveraging advanced technologies to stay ahead of industry trends. Subramanya's visionary leadership has established LCM Logistics as a trusted partner for businesses seeking streamlined operations and growth.
         `,
         img: "./Subramanya02.jpg"
 
@@ -96,18 +96,15 @@ export const Profiledata = [
 export const TimeLineData = [
     {
         date: "FY 20-21",
-        Delivery: "1,12,331",
-        revenue: "4,60,358"
+        Delivery: "11,12,331",
     },
     {
         date: "FY 21-22",
-        Delivery: "1,23,443",
-        revenue: "7,98,917"
+        Delivery: "12,23,443",
     },
     {
         date: "FY 22-23",
-        Delivery: "1,45,666",
-        revenue: "10,07,950"
+        Delivery: "14,45,666",
     },
 
 ]

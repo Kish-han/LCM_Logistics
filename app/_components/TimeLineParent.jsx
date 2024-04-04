@@ -25,14 +25,14 @@ const TimeLineParent = () => {
             </div>
             {/* <!-- Card --> */}
             <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white dark:bg-dark_bg p-4 rounded  dark:border-slate-200 dark:shadow text-black dark:border-0">
-              <div className="border-[2px] border-[#B1C2F3] flex flex-col sm:flex-row justify-between px-6 rounded-[12px] gap-x-2 dark:bg-dark_bg ">
+              <div className="border-[2px] border-[#B1C2F3] flex flex-col sm:flex-row justify-between px-3 rounded-[12px] gap-x-2 dark:bg-dark_bg ">
                 <div className="border-b-[1px] sm:border-b-0 sm:border-r-[1px] border-black py-7 my-2 dark:text-white">
                   <h1 className="font-bold text-3xl md:text-5xl text-center sm:text-start dark:text-light_txt px-2">
                     {item.date}
                   </h1>
                 </div>
                 <div className="flex flex-col items-center justify-center py-4 px-2">
-                  <h1 className="text-md text-[#838383] text-wrap text-center dark:text-white">
+                  <h1 className="text-md text-[#838383] text-wrap text-center dark:text-white text-[18px] font-semibold">
                     Delivery made:{item.Delivery}
                   </h1>
                 </div>

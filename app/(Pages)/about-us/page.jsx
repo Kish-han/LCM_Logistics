@@ -27,13 +27,13 @@ const Page = () => {
               Our Misson and Vision
             </h1>
             <div>
-              <span className="-top-13 -left-14 md:hidden lg:inline-block absolute lg:top-12 lg:-left-20 z-1 p-0">
+              {/* <span className="-top-13 -left-14 md:hidden lg:inline-block absolute lg:top-12 lg:-left-20 z-1 p-0">
                 <ImQuotesLeft
                   // color="#83838380"
                   className="text-[#83838380] dark:text-white"
                   style={{ width: "60px", height: "70px" }}
                 />
-              </span>
+              </span> */}
               <p className="relative text-black dark:text-light_txt z-[999] p-0 text-wrap">
                 To streamline global logistics through innovative solutions,
                 ensuring seamless delivery and exceeding customer expectations
@@ -41,13 +41,13 @@ const Page = () => {
                 worldwide, recognized for reliability, efficiency, and a
                 commitment to sustainability in all operations.
               </p>
-              <span className="-bottom-2 -right-8 md:hidden lg:inline-block  absolute lg:-bottom-2 lg:-right-11 z-1 p-0">
+              {/* <span className="bottom-2 -right-8 md:hidden lg:inline-block  absolute lg:-bottom-10 lg:-right-5 z-1 p-0">
                 <ImQuotesRight
                   // color="#05040480"
                   className="text-[#83838380] dark:text-white"
                   style={{ width: "60px", height: "70px" }}
                 />
-              </span>
+              </span> */}
             </div>
           </div>
         </div>
@@ -72,11 +72,12 @@ const Page = () => {
             </h1>
           </div>
           {/* profile cards */}
-          <div className="gap-5 w-[100%] mt-4 items-center  justify-center gap-x-2 flex overflow-scroll md:overflow-hidden">
+          <div className="gap-5 mx-auto w-[90%] mt-4 flex flex-col items-center  justify-center gap-x-2 space-y-10 flex items-center md:overflow-hidden">
             {Profiledata.map((item, index) => (
               <div
                 key={index}
-                className={"col-span-1 row-span-1 relative border-0"}
+                // className={"col-span-1 row-span-1 relative border-0"}
+                // className={""}
               >
                 <ProfileCard item={item} />{" "}
               </div>

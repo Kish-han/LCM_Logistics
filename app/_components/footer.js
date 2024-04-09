@@ -111,7 +111,7 @@ export default function Footer() {
                     Copyright © 2024 LCM Logistics Pvt Ltd. All Rights Reserved
                 </p>
                 <p>
-                    <a href={"https://simplifyr.in"}>Website Designed by Simplifyr</a>
+                    <a href={"https://simplifyr.in"} target="_blank">Website Designed by Simplifyr</a>
                 </p>
             </div>
         </div>

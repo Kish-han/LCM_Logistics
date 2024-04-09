@@ -67,9 +67,7 @@ export default function Home() {
         <div className={"bg-white dark:bg-dark_bg overflow-y-auto overflow-x-hidden"}>
             <div
                 className={"w-[100dvw] h-[100dvh] bg-[url('../public/banner/hero-banner.jpg')] bg-cover flex justify-center pt-[30dvh] banner-div"}>
-
             </div>
-
 
             {/*    --------------------------services*/}
             <div className={" w-[100vw] py-12 flex flex-col items-center max-w-[100vw]  "}>
@@ -169,11 +167,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
-
         </div>
     );
 }

@@ -48,8 +48,8 @@
   background-size: cover;
   background-position: center;
 }
-.banner-div-new {
-  position: relative; /* Required for z-index to work */
+/* .banner-div-new {
+  position: relative; Required for z-index to work
   z-index: 1;
   background: linear-gradient(
       to top,
@@ -62,7 +62,7 @@
   background-position: center;
 }
 .banner-title {
-  position: relative; /* Required for z-index to work */
+  position: relative; Required for z-index to work
   z-index: 1;
   background: linear-gradient(
     to top,
@@ -72,4 +72,4 @@
   );
   background-size: cover;
   background-position: center;
-}
+} */

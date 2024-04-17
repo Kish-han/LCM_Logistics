@@ -63,7 +63,7 @@ const Navbar = () => {
   }, []);
   return (
     <main
-      className={`z-[9999] min-h-26 max-h-18 min-w-[100vw] fixed lg:w-[100vw] text-white ${color ? "bg-black bg-opacity-50" : "bg-black bg-opacity-50"
+      className={`z-[9999] min-h-26 max-h-18 min-w-[100vw] fixed lg:w-[100vw] text-white ${color ? "bg-black bg-opacity-50" : "bg-black/15 bg-opacity-50"
         } backdrop-blur-[5px]  border-0 border-solid border-[rgba(255,255,255,0.75)]`}
     >
       <div className="flex flex-row  items-center  justify-between py-3 px-4  lg:px-20">

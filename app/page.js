@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Card from "@/app/_components/Services-card";
-import Choosecard from "@/app/_components/chooseus-card";
-import AboutUs from "./_components/AboutUs";
-import { data } from "./data";
+import { data } from "@/constants/data";
 import emailjs from 'emailjs-com';
-import Contact from "./_components/Contact";
+import Card from "@/components/Services-card";
+import Choosecard from "@/components/chooseus-card";
+import AboutUs from "@/components/AboutUs";
+import Contact from "@/components/Contact";
 
 export default function Home() {
 
@@ -89,10 +89,7 @@ export default function Home() {
                             }
                             )
                         }
-
                     </div>
-
-
                 </div>
             </div>
 

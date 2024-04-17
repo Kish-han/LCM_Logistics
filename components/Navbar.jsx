@@ -102,7 +102,7 @@ const Navbar = () => {
                 <div className="relative">
                   <div className="block border-[1px] border-white border-white-900 w-14 h-7 rounded-full"></div>
                   <div
-                    className={`dot absolute top-[2.7px]   bg-white w-[23px] h-[23px] rounded-full transition ${isChecked
+                    className={`dot absolute top-[2.3px] bg-white w-[23px] h-[23px] rounded-full transition ${isChecked
                       ? 'before:content-["🌛"]'
                       : 'before:content-["☀️"]'
                       } `}
@@ -138,18 +138,10 @@ const Navbar = () => {
             }`}
         >
           <div className="flex flex-col items-center justify-center">
-            {data.map((link, index) => (
-              <div className="w-full shadow-md " key={index}>
-                <li key={link.label} className="md:ml-8 text-xl md:my-0 my-7 ">
-                  <a
-                    href={link.link}
-                    className="text-gray-800 hover:text-gray-400 duration-500 "
-                    onClick={() => handleClick(link.link)}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              </div>
+            {data.map((item, index) => (
+              <h1 key={index} className="md:ml-8 text-xl md:my-0 my-7 ">
+                <Link className="text-gray-800 hover:text-gray-400 duration-500 " href={item.link} onClick={() => { setOpen(false) }}>{item.label}</Link>
+              </h1>
             ))}
           </div>
         </ul>

@@ -11,12 +11,14 @@ import TimeLineParent from "@/components/TimeLineParent";
 const Page = () => {
   return (
     <div className="w-[100dvw] h-auto  min-h-[100dvh] flex-col overflow-y-auto">
-      <div className="bg-[url('../public/banner/newhero.jpg')] bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh]">
+      <div className="flex flex-col justify-center min-w-[100dvw] h-[80dvh]">
         {/* <div className="flex flex-row items-start justify-center ">
           <h1 className="md:text-6xl text-4xl text-center text-white font-bold">
             About Us
           </h1>
         </div> */}
+        <img src="/banner/newhero.jpg" alt="banner" className="object-cover w-full h-full" />
+
       </div>
       {/*  seperator*/}
       <div className="flex flex-col px-10 md:px-20 w-[100dvw] h-auto min-h-[100dvh] dark:bg-dark_bg dark:text-light_txt ">

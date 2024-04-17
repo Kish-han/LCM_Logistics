@@ -9,7 +9,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
-import { FaqData, data } from "@/constants/data"; 
+import { FaqData, data } from "@/constants/data";
 import { useContext } from "react";
 import { SelectedServiceContext } from "@/provider/ServicesProvider.jsx";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -30,23 +30,15 @@ const Page = () => {
   };
   return (
     <div className="w-[100dvw] h-auto min-h-[100dvh] flex-col  relative dark:bg-dark_bg overflow-y-auto">
-      {/* <div className="bg-[url('../public/banner/newhero.jpg')] bg-cover flex flex-col justify-center pt-[30dvh] min-w-[100dvw] min-h-[80dvh] banner-div-new overflow-y-auto">
-        <div className="banner-title">
-          <h1 className="md:text-6xl text-4xl text-center text-white font-bold">
-            {selectedService.name}
-          </h1>
-          <div className="pt-4 text-white text-center">
-            Home {" >>  "}Services
-          </div>
-        </div>
-      </div> */}
       <Carosole />
 
       {/*  seperator*/}
-      <div className="flex flex-col px-10 md:px-20 w-[100dvw] h-auto overflow-y-auto">
+      <div className="flex flex-col px-5 md:px-20 w-[100dvw] h-auto overflow-y-auto">
         <div className="flex flex-col md:flex-row gap-y-8 gap-x-5 items-start pt-[10dvh]">
           <div className="w-full h-auto md:w-[70%] ">
-            <img
+            <Image
+              width={1000}
+              height={600}
               src={selectedService.img}
               alt="banner"
               className="object-cover w-full h-[600px] border rounded-md"

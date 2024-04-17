@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 const Carosole = () => {
     return (
         <div className=''>
-            <Carousel autoPlay showThumbs={false} infiniteLoop interval={1500}>
+            <Carousel autoPlay showThumbs={false} infiniteLoop interval={2200} swipeable={false}>
                 <div className=''>
                     <img className='h-[100vh] object-cover' alt="" src="/service/full-truck-2.jpeg" />
                     {/* <p className="legend">Legend 1</p> */}
